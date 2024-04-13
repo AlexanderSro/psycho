@@ -6,7 +6,7 @@ import Logo3 from '../assets/logo3.png'; // Make sure the path to your logo is c
 
 export default function Navbar() {
     return (
-        <div className="navbar bg-gradient-to-r from-orange-200 via-amber-400 to-orange-300 shadow-lg border-b-2">
+        <div className="navbar bg-gradient-to-r from-lime-50 via-emerald-200 to-lime-300 shadow-lg border-b-2">
             <div className="navbar-start">
                 <Link to="/" className="">
                     <img src={Logo2} alt="Company Logo" className="max-h-16 w-auto"/>

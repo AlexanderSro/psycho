@@ -6,32 +6,20 @@ const Home = () => {
     return (
         <div>
             {/* Hero Section */}
-            <div className="bg-cover bg-center h-96 py-24 px-10 object-cover bg-gradient-to-r from-orange-200 via-amber-400 to-orange-300">
+            <div className="bg-cover bg-center h-96 py-24 px-10 object-cover bg-gradient-to-r from-lime-50 via-emerald-200 to-lime-300 text-lime-700 flex flex-wrap">
                 <div className="md:w-1/2">
                     <p className="font-bold text-sm uppercase">Bine ai venit pe pagina noastra</p>
                     <p className="text-3xl font-bold">Luiza Dumitriu Cristu</p>
                     <p className="text-2xl mb-10 leading-none italic">Fii aici, fii acum! Calatoreste in prezentul tau.</p>
                     <Link to="/about"
-                          className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                          className="bg-transparent hover:bg-lime-700 text-lime-700 font-semibold hover:text-white py-2 px-4 border border-lime-700 hover:border-transparent rounded-lg">
                         Afla mai multe
                     </Link>
                 </div>
             </div>
 
-            {/* About Us Section */}
+            {/* Services Section */}
             <div className="container mx-auto px-6 py-10">
-                <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">About Us</h2>
-                <div className="flex items-center flex-wrap mb-20">
-                    <div className="w-full md:w-1/2">
-                        <h4 className="text-3xl text-gray-800 font-bold mb-3">Who We Are</h4>
-                        <p className="text-gray-600 mb-8">Some quick example text to build on the card title and make up
-                            the bulk of the card's content. Go ahead and replace it with your own text.</p>
-                    </div>
-                    <div className="w-full md:w-1/2 text-center">
-                        <img src={Luiza} alt="About Us" className="w-full h-auto rounded-md"/>
-                    </div>
-                </div>
-
                 {/* Services Section */}
                 <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">Services</h2>
                 <div className="flex items-center flex-wrap">
