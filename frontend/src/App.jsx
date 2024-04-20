@@ -8,11 +8,21 @@ import Services from './screens/Services';
 import Booking from './screens/Booking';
 import Contact from './screens/Contact';
 import Navbar from './components/Navbar';
-
+import Footer from './components/Footer';
+import backgroundImage from './assets/bg-image3.jpg';
+import UtilityBar from "./components/UtilityBar.jsx";
 
 function App() {
     return (
-        <div className="App w-full">
+        <div className="App" style={{
+            backgroundImage: `url(${backgroundImage})`,
+            backgroundSize: window.innerWidth <= 768 ? '100% 100%' : '100% 100%',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundAttachment: 'fixed',
+
+        }}>
+            <UtilityBar/>
             <Navbar/>
             <Routes>
                 <Route path="/" element={<Home/>}/>
@@ -22,6 +32,7 @@ function App() {
                 <Route path="/booking" element={<Booking/>}/>
                 <Route path="/contact" element={<Contact/>}/>
             </Routes>
+            <Footer/>
         </div>
     );
 }
